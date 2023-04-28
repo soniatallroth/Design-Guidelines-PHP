@@ -85,7 +85,7 @@ nav li a:hover {
     align-self: center;
 }
 
-/* titles */
+/* title */
 .title_header {
     margin: 30px 0px;
 }
@@ -97,8 +97,24 @@ nav li a:hover {
 .title_line {
     border-bottom: 4px solid var(--coral-main);
     border-radius: 1.5px;
-    margin-top: 12px;
+    margin-top: 6px;
     width: 100px;
+}
+
+/* subtitle */ 
+.subtitle_header {
+    margin: 30px 0px;
+}
+.subtitle_header h1 {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+.subtitle_line {
+    border-bottom: 4px solid var(--teal-main);
+    border-radius: 1.5px;
+    margin-top: 6px;
+    width: 50px;
 }
 
 /* intro  */ 
@@ -117,28 +133,14 @@ nav li a:hover {
 
 /* module */
 .module {
-    margin: 50px 0px;
+    margin: 110px 0px;
     margin-right: 50px;
 }
 .module img {
     margin-top: 20px;
 }
 
-/* subtitle */ 
-.subtitle_header {
-    margin: 30px 0px;
-}
-.subtitle_header h1 {
-    font-size: 20px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-}
-.subtitle_line {
-    border-bottom: 4px solid var(--teal-main);
-    border-radius: 1.5px;
-    margin-top: 12px;
-    width: 50px;
-}
+
 
 /* code block */
 .code {
