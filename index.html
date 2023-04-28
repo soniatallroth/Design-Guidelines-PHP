@@ -6,19 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/javascript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home page</title>
 </head>
 <body>
     <!--Header-->
     <nav>
-        <a href="index.html"><img src="images/phpLogo.png"></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="guidelines.html">Guidelines</a></li>
-            <li><a href="components.html">Components</a></li>
-        </ul>
+        <img src="images/phpLogo.png">
+        <a href="index.html">About</a>
+        <!--Dropdown-->
+        <button class="dropdown">Guidelines 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown_container">
+            <a href="guidelines.html">Link 1</a>
+            <a href="guidelines.html">Link 2</a>
+            <a href="guidelines.html">Link 3</a>
+        </div>
+         <!--Dropdown-->
+        <button class="dropdown">Components 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown_container">
+            <a href="components.html">Link 1</a>
+            <a href="components.html">Link 2</a>
+            <a href="components.html">Link 3</a>
+        </div>
+         <!--Dropdown-->
+        <button class="dropdown bottom_nav_link">GitHub 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown_container">
+            <a href="#">PHP Website</a>
+            <a href="#">Design Guidelines</a>
+        </div>
     </nav>
     <!--Hero section-->
     <section class="hero">
@@ -118,5 +139,8 @@
         </section>
         <!--End of module-->
     </main>
+    <!--Javascript-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/javascript.js"></script>
 </body>
 </html>

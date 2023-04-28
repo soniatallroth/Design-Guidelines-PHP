@@ -25,6 +25,7 @@ font-weight: 700;
 /* Global Styles */ 
 body {
     font-family: "Inter", sans-serif;
+    background-color: var(--light-gray);
 }
 main {
     margin-left: 250px;
@@ -33,7 +34,7 @@ main {
 
 /* header */ 
 nav {
-    background-color: var(--light-gray);
+    background-color: var(--white);
     list-style-type: none;
     width: 200px;
     position: fixed;
@@ -42,17 +43,41 @@ nav {
     border-right: 2px solid var(--black);
 }
 nav img {
-    padding: 20px;
+    padding: 16px;
+    width: 100%;
 }
-nav li a {
-  display: block;
-  color: var(--black);
-  padding: 10px 16px;
-  text-decoration: none;
+nav a, .dropdown {
+    padding: 6px 8px 6px 16px;
+    font-size: 18px;
+    display: block;
+    color: var(--black);
+    background-color: none;
+    width: 100%;
+    border-top: 1px solid var(--light-gray);
 }
-nav li a:hover {
-  background-color: var(--coral-main)
+.bottom_nav_link {
+    border-bottom: 1px solid var(--light-gray);
 }
+nav a:hover, .dropdown:hover {
+    background-color: var(--coral-light);
+}
+.active {
+    background-color: var(--coral-light);
+}
+.dropdown_container {
+    display: none;
+    padding-left: 8px;
+    font-weight: 300;
+    border-top: 1px solid var(--light-gray);
+}
+.dropdown_container a {
+    border: none;
+}
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
 
 /* hero section */ 
 .hero {
