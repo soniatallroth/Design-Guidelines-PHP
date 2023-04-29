@@ -19,9 +19,9 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown_container">
-            <a href="guidelines.html">Link 1</a>
-            <a href="guidelines.html">Link 2</a>
-            <a href="guidelines.html">Link 3</a>
+            <a href="#colors">Colors</a>
+            <a href="#typography">Typography</a>
+            <a href="#icons">Icon Library</a>
         </div>
          <!--Dropdown-->
         <button class="dropdown">Components 
@@ -67,75 +67,410 @@
             </ul>
         </section>
         <!--Module-->
-        <section class="module">
+        <section id="colors" class="module">
             <div class="title_header">
-                <h1>Module</h1>
+                <h1>Colors</h1>
                 <div class="title_line"></div>
             </div>
             <p>This is the description of the module.</p>
             <div class="subtitle_header">
-                <h1>This is a subheader</h1>
+                <h1>Color Info Images</h1>
                 <div class="subtitle_line"></div>
             </div>
-            <img src="images/heroimagesupport.png" alt="screenshot of module">
+            <img src="images/colorInfoCircles.png" alt="colored circles" width="600px">
             <div class="subtitle_header">
-                <h1>HTML</h1>
+                <h1>Global Colors CSS Code Snippet</h1>
                 <div class="subtitle_line"></div>
             </div>
             <!--Code section-->
             <pre class="syntax-html">
-                <div class="title_header">
-                <h1>Module</h1>
-                <div class="title_line"></div>
-                </div>
+                /* GLOBAL COLORS */
+                :root {
+                --teal-main: #016f75; /* var(--teal-main); */
+                --teal-light: #02a8b1; /* var(--teal-light); */
+                --coral-main: #f48d79; /* var(--coral-main); */
+                --coral-light: #f7afa1; /* var(--coral-light); */
+                --black: #000000; /* var(--black); */
+                --gray: #808080; /* var(--gray); */
+                --light-gray: #bfbfbf; /* var(--light-gray); */
+                --white: #ffffff; /* var(--white); */
+                --red: #ff0228; /* var(--red); */
+                }
             </pre>
-            <div class="subtitle_header">
-                <h1>CSS</h1>
-                <div class="subtitle_line"></div>
-            </div>
-            <!--Code section-->
-            <pre class="syntax-html">
-                <div class="title_header">
-                <h1>Module</h1>
-                <div class="title_line"></div>
+            <!--Black-->
+                <div class="subtitle_header">
+                    <h1>Black</h1>
+                    <div class="subtitle_line"></div>
                 </div>
-            </pre>
+                <div class="circle" style="background: var(--black);"></div>
+                <h3 class="section_header">Color Name & Hex Value</h3>
+                <p>Primary color, --black, #000000</p>
+                <h3 class="section_header">Context of Use</h3>
+                <p>Sitewide</p>
+                <ul>
+                    <li>Site-nav logo text and icon outline</li>
+                    <li>All footer text (span & p)</li>
+                    <li>Site-nav notifications icon</li>
+                    <li>All search icons</li>
+                </ul><br>
+                <p>Home Page</p>
+                <ul>
+                    <li>main headings (h2)</li>
+                    <li>main body text (p)</li>
+                </ul><br>
+                <p>Support & FAQ Page</p>
+                <ul>
+                    <li>form labels and user input field text (label & input)</li>
+                    <li>form text input field borders (input)</li>
+                    <li>All accordion text (headings and body text, summary & p)</li>
+                    <li>Accordion arrow icons</li>
+                </ul><br>
+                <p>Search Page</p>
+                <ul>
+                    <li>Filters dropdown text (select & option)</li>
+                    <li>Filters borders (select)</li>
+                    <li>Post headings and body text (h3 & p)</li>
+                </ul><br>
+                <p>Messages Page</p>
+                <ul>
+                    <li>Vertical nav links and page title (p & h1)</li>
+                    <li>Convo-cards titles (p)</li>
+                    <li>Select all label (p)</li>
+                </ul><br>
+                <p>Single-Post Page</p>
+                <ul>
+                    <li>Page title (h1)</li>
+                    <li>create-post user input field text and borders (textarea)</li>
+                    <li>Create-post filter dropdown text & borders (input)</li>
+                    <li>Add-more-tags tag text (p)</li>
+                    <li>Save-as-draft button text (a)</li>
+                </ul><br>
+                <p>Login Page</p>
+                <ul>
+                    <li>Page title and subtitle (h1 & p)</li>
+                    <li>form user input field labels, text, and borders (label & input)</li>
+                </ul><br>
+                <h3 class="section_header">Rationale</h3>
+                <p>In our design, black fulfills the function it commonly does in many sites. It’s the default color, particularly for large bodies of text. It’s also used to contrast between lighter colors to make everything easier to read and understand.</p>
+            <!--White-->
+                <div class="subtitle_header">
+                    <h1>White</h1>
+                    <div class="subtitle_line"></div>
+                </div>
+                <div class="circle" style="background: var(--white);"></div>
+                <h3 class="section_header">Color Name & Hex Value</h3>
+                <p>Primary color, --white, #FFFFFF</p>
+                <h3 class="section_header">Context of Use</h3>
+                <p>Sitewide</p>
+                <ul>
+                    <li>Default page background (body)</li>
+                    <li>Search bars background (body)</li>
+                    <li>header site-navbar background</li>
+                    <li>site-navbar create-post button text (input)</li>
+                    <li>footer social-media background and icon design</li>
+                    <li>All user input fields and dropdowns backgrounds (select, option, & input)</li>
+                    <li>Any image-carousel arrow icons</li>
+                    <li>Hero page title & subtitle (h1 & p)</li>
+                    <li>All filters dropdown backgrounds (select & option)</li>
+                    <li>Text for tags & buttons that have coral or teal backgrounds</li>
+                </ul><br>
+                <p>Home Page</p>
+                <ul>
+                    <li>3-col card backgrounds and icon designs (div)</li>
+                    <li>community section heading & body text (h2 & p)</li>
+                </ul><br>
+                <p>Support & FAQ Page</p>
+                <ul>
+                    <li>All accordion heading backgrounds (details & summary)</li>
+                    <li>form card background</li>
+                    <li>Support-request section heading & body text (h1 & p)</li>
+                </ul><br>
+                <p>Search Page</p>
+                <ul>
+                    <li>Clear-filters and sort-by button text (p)</li>
+                    <li>Post-cards tags text (p)</li>
+                    <li>Pagination inactive-backgrounds & active-text</li>
+                </ul><br>
+                <p>Messages Page</p>
+                <ul>
+                    <li>Convo-cards backgrounds (div)</li>
+                </ul><br>
+                <h3 class="section_header">Rationale</h3>
+                <p>White tends to function well as a background against darker images and text, and just as easily stands out as a small icon or text when put against a darker background.</p>
+            <!--teal main-->
+                <div class="subtitle_header">
+                    <h1>Teal</h1>
+                    <div class="subtitle_line"></div>
+                </div>
+                <div class="circle" style="background: var(--teal-main);"></div>
+                <h3 class="section_header">Color Name & Hex Value</h3>
+                <p>Primary color, --teal-main, #016F75</p>
+                <h3 class="section_header">Context of Use</h3>
+                <p>Sitewide</p>
+                <ul>
+                    <li>Site-nav logo design</li>
+                    <li>footer social-media icon designs</li>
+                    <li>Some tags and button backgrounds (input & p)</li>
+                </ul><br>
+                <p>Home Page</p>
+                <ul>
+                    <li>3-col card borders and icon designs (div)</li>
+                    <li>community section background (div)</li>
+                </ul><br>
+                <p>Support & FAQ Page</p>
+                <ul>
+                    <li>Accordion subheading borders and heading underline (p & details)</li>
+                    <li>Support-request section background (div)</li>
+                    <li>form submit button background (input)</li>
+                </ul><br>
+                <p>Search Page</p>
+                <ul>
+                    <li>Pagination active-background, inactive-icons, and inactive-text</li>
+                </ul><br>
+                <h3 class="section_header">Rationale</h3>
+                <p>Teal functions as a darker color to separate and accent content, and to just add some more color to the site overall. It’s also used to draw the eye towards certain parts of the page, and occasionally signify that a component is interactive.</p>
+            <!--coral main-->
+                <div class="subtitle_header">
+                    <h1>Coral</h1>
+                    <div class="subtitle_line"></div>
+                </div>
+                <div class="circle" style="background: var(--coral-main);"></div>
+                <h3 class="section_header">Color Name & Hex Value</h3>
+                <p>Primary color, --coral-main, #F48D79</p>
+                <h3 class="section_header">Context of Use</h3>
+                <p>Sitewide</p>
+                <ul>
+                    <li>Site-nav create-post button background (input)</li>
+                    <li>Heading underline designs (div)</li>
+                    <li>footer background</li>
+                </ul><br>
+                <p>Home Page</p>
+                <ul>
+                    <li>3-col card button backgrounds (div)</li>
+                </ul><br>
+                <p>Support & FAQ Page</p>
+                <ul>
+                    <li>form clear button background (input)</li>
+                </ul><br>
+                <p>Search Page</p>
+                <ul>
+                    <li>Pagination active-background, inactive-icons, and inactive-text</li>
+                </ul><br>
+                <h3 class="section_header">Rationale</h3>
+                <p>Similarly to teal, coral is used to separate and accent content. Coral is used primarily to separate the footer from the rest of the site, and is the main color used for interactive elements like buttons.</p>
+            <!--teal light-->
+                 <div class="subtitle_header">
+                    <h1>Teal Light</h1>
+                    <div class="subtitle_line"></div>
+                </div>
+                <div class="circle" style="background: var(--teal-light);"></div>
+                <h3 class="section_header">Color Name & Hex Value</h3>
+                <p>Secondary color, --teal-light, #02A8B1</p>
+                <h3 class="section_header">Context of Use</h3>
+                <p>Sitewide</p>
+                <ul>
+                    <li>Hovering over buttons that have teal background</li>
+
+                </ul><br>
+                <h3 class="section_header">Rationale</h3>
+                <p>Signify interactive component; hovering</p>
+            <!--coral light-->
+                 <div class="subtitle_header">
+                    <h1>Coral Light</h1>
+                    <div class="subtitle_line"></div>
+                </div>
+                <div class="circle" style="background: var(--coral-light);"></div>
+                <h3 class="section_header">Color Name & Hex Value</h3>
+                <p>Secondary color, --coral-light, #F7AFA1</p>
+                <h3 class="section_header">Context of Use</h3>
+                <p>Sitewide</p>
+                <ul>
+                    <li>Hovering over buttons that have teal background</li>
+                </ul><br>
+                <h3 class="section_header">Rationale</h3>
+                <p>When coral is used as a color in an interactive component, a lighter coral is used on a mouse hovering over the component to reinforce interactivity.</p>            
+            <!--gray-->
+                 <div class="subtitle_header">
+                    <h1>Gray</h1>
+                    <div class="subtitle_line"></div>
+                </div>
+                <div class="circle" style="background: var(--gray);"></div>
+                <h3 class="section_header">Color Name & Hex Value</h3>
+                <p>Secondary color, --gray, #808080</p>
+                <h3 class="section_header">Context of Use</h3>
+                <p>Sitewide</p>
+                <ul>
+                    <li>Site-nav links (a)</li>
+                </ul><br>
+                <p>Search Page</p>
+                <ul>
+                    <li>Post-cards time-posted text (p)</li>
+                </ul><br>
+                <p>Messages Page</p>
+                <ul>
+                    <li>Convo-cards time-messaged text (p)</li>
+                </ul><br>
+                <h3 class="section_header">Rationale</h3> 
+                <p>Gray is used within the site as another contrast tool, particularly to clearly display text that isn’t as high in importance as a logo or header.</p>           
+            <!--light gray-->
+                 <div class="subtitle_header">
+                    <h1>Light Gray</h1>
+                    <div class="subtitle_line"></div>
+                </div>
+                <div class="circle" style="background: var(--light-gray);"></div>
+                <h3 class="section_header">Color Name & Hex Value</h3>
+                <p>Accent/highlight color, --light-gray, #BFBFBF</p>
+                <h3 class="section_header">Context of Use</h3>
+                <p>Sitewide</p>
+                <ul>
+                    <li>All form placeholder text (input)</li>
+                    <li>All textarea placeholder text</li>
+                </ul><br>
+                <p>Support & FAQ Page</p>
+                <ul>
+                    <li>Accordion active-content backgrounds (div)</li>
+                </ul><br>
+                <p>Search Page</p>
+                <ul>
+                    <li>Post-cards borders (div)</li>
+                    <li>Pagination borders</li>
+                </ul><br>
+                <p>Messages Page</p>
+                <ul>
+                    <li>Vertical nav links hover backgrounds (p)</li>
+                    <li>Convo-cards borders (div)</li>
+                </ul><br>
+                <p>Single-Post Page</p>
+                <ul>
+                    <li>Add-more-tags tag background (p)</li>
+                </ul><br>
+                <p>Login Page</p>
+                <ul>
+                    <li>Login section background (div)</li>
+                </ul><br>
+                <h3 class="section_header">Rationale</h3> 
+                <p>Like our “coral light” color, we chose a light gray to show interactive content, as well as content of less importance.</p>
+            <!--red-->
+                 <div class="subtitle_header">
+                    <h1>Red</h1>
+                    <div class="subtitle_line"></div>
+                </div>
+                <div class="circle" style="background: var(--red);"></div>
+                <h3 class="section_header">Color Name & Hex Value</h3>
+                <p>Accent/highlight color, --red, #FF0228</p>
+                <h3 class="section_header">Context of Use</h3>
+                <p>Sitewide</p>
+                <ul>
+                    <li>form required field asterisks (span)</li>
+                </ul><br>
+                <h3 class="section_header">Rationale</h3>   
+                <p>Red is often used as an eye-catching color for important or urgent information.</p>                          
         </section>
         <!--End of module-->
-                <!--Module-->
-        <section class="module">
+        <!--Module-->
+        <section id="typography" class="module">
             <div class="title_header">
-                <h1>Module</h1>
+                <h1>Typography</h1>
                 <div class="title_line"></div>
             </div>
-            <p>This is the description of the module.</p>
             <div class="subtitle_header">
-                <h1>This is a subheader</h1>
+                <h1>Standards Table</h1>
                 <div class="subtitle_line"></div>
             </div>
-            <img src="images/heroimagesupport.png" alt="screenshot of module">
-            <div class="subtitle_header">
-                <h1>HTML</h1>
-                <div class="subtitle_line"></div>
-            </div>
-            <!--Code section-->
-            <pre class="syntax-html">
-                <div class="title_header">
-                <h1>Module</h1>
+            <table>
+                <tr>
+                    <th>Standard</th>
+                    <th>Font Color</th>
+                    <th>Type</th>
+                    <th>Size</th>
+                    <th>Weight</th>
+                    <th>Line Height</th>
+                    <th>Horizontal Alignment</th>
+                    <th>Other Details and Notes</th>
+                </tr>
+                <tr> <!--Body text-->
+                    <td>body text or other types of text<br>p</td>
+                    <td>--black<br>--white</td>
+                    <td>Inter</td>
+                    <td>16 px</td>
+                    <td>Normal (400)</td>
+                    <td>24px</td>
+                    <td>-</td>
+                    <td>Color and alignment is based on parent components or elements; black/white, right/center aligned</td>
+                </tr>
+                <tr> <!--Headings-->
+                    <td>Headings / titles<br>h1</td>
+                    <td>--black<br>--white</td>
+                    <td>Lato</td>
+                    <td>36 px</td>
+                    <td>Bold (700)</td>
+                    <td>normal</td>
+                    <td>center</td>
+                    <td>-</td>
+                </tr>
+                <tr> <!--Subheadings-->
+                    <td>Subheadings<br>h2</td>
+                    <td>--black<br>--white</td>
+                    <td>Inter</td>
+                    <td>16 px</td>
+                    <td>Normal (400)</td>
+                    <td>normal</td>
+                    <td>Start</td>
+                    <td>Color and alignment is based on child components or elements; black/white, right/center aligned</td>
+                </tr>
+                <tr> <!--Sub sub headings-->
+                    <td>Sub-subheadings<br>h3</td>
+                    <td>--black<br>--white</td>
+                    <td>Lato</td>
+                    <td>16 px</td>
+                    <td>Normal (400)</td>
+                    <td>24px</td>
+                    <td>-</td>
+                    <td>Color and alignment is based on parent components or elements; black/white, right/center aligned</td>
+                </tr>
+                <tr> <!--Links-->
+                    <td>Links<br>a</td>
+                    <td>--black<br>--white</td>
+                    <td>Inter</td>
+                    <td>16 px</td>
+                    <td>Normal (400)</td>
+                    <td>24px</td>
+                    <td>-</td>
+                    <td>Color and alignment is based on parent components or elements; black/white, right/center aligned</td>
+                </tr>
+            </table><br>
+            <p>(n/a = not specified, can't find, or doesn't exist in files) ( - = dependent on something else, see notes)</p>
+        </section>
+        <!--End of module-->
+        <!--Module-->
+        <section id="icons" class="module">
+            <div class="title_header">
+                <h1>Icon Library</h1>
                 <div class="title_line"></div>
-                </div>
-            </pre>
+            </div>
             <div class="subtitle_header">
-                <h1>CSS</h1>
+                <h1>Name & Description</h1>
                 <div class="subtitle_line"></div>
             </div>
-            <!--Code section-->
-            <pre class="syntax-html">
-                <div class="title_header">
-                <h1>Module</h1>
-                <div class="title_line"></div>
-                </div>
-            </pre>
+            <h3 class="section_header">Font Awesome</h3>
+            <ul>
+                <li><a href="https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid">Search icon</a></li>
+                <li><a href="https://fontawesome.com/icons/magnifying-glass?f=classic&s=thin">Search icon thin</a></li>
+                <li><a href="https://fontawesome.com/icons/question?f=classic&s=solid">Question mark</a></li>
+                <li><a href="https://fontawesome.com/icons/dollar-sign?f=classic&s=solid">Dollar sign</a></li>
+                <li><a href="https://fontawesome.com/icons/chevron-right?f=classic&s=solid">Chevron right</a></li>
+                <li><a href="https://fontawesome.com/icons/chevron-left?f=classic&s=solid">Chevron left</a></li>
+            </ul>
+            <div class="subtitle_header">
+                <h1>Rationale</h1>
+                <div class="subtitle_line"></div>
+            </div>
+            <p>Font Awesome icons are easily accessible; they are easily added to any project with an i tag and a link to a stylesheet in the head of an HTML document. Moreover, these icons are easy to edit and come in many different thicknesses. They feature clear designs that are indicative of their name- this allows for users to easily understand what the developers and designers are intending to communicate.</p>
+            <div class="subtitle_header">
+                <h1>Recommendations & How-Tos</h1>
+                <div class="subtitle_line"></div>
+            </div>
+            <p>Use an i tag to place Font Awesome icons in your project.</p>
         </section>
         <!--End of module-->
     </main>

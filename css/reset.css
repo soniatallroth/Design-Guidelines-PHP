@@ -118,7 +118,6 @@ button {
 ol,
 ul,
 menu {
-    list-style: none;
 }
 
 /* For images to not be able to exceed their container */
@@ -212,7 +211,8 @@ button {
 ol,
 ul,
 menu {
-    list-style: none;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 /* For images to not be able to exceed their container */
