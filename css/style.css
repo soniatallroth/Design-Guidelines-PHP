@@ -174,9 +174,6 @@ nav a:hover, .dropdown:hover {
     margin: 40px 0px 110px 0px;
     margin-right: 50px;
 }
-.module img {
-    margin: 6px 0px;
-}
 
 /* code block */
 .code {
@@ -299,6 +296,7 @@ ul li a:hover {
 /* ICON STYLES */
 .fa-solid {
     color: var(--black);
+    width: 20px;
 }
 
 /* grid system stuff */ 
