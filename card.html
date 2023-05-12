@@ -1,0 +1,372 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Components</title>
+</head>
+<body>
+    <!--Header-->
+    <nav>
+        <a href="index.html"><img src="images/phpLogo.png"></a>
+        <a href="index.html">About</a>
+        <!--Dropdown-->
+        <button class="dropdown">Guidelines 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown_container">
+            <a href="guidelines.html#colors">Colors</a>
+            <a href="guidelines.html#typography">Typography</a>
+            <a href="guidelines.html#icons">Icon Library</a>
+            <a href="guidelines.html#grid-layout">Grid-Based Layout System</a>
+        </div>
+         <!--Dropdown-->
+        <button class="dropdown">Components 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown_container">
+            <a href="button.html">Button</a>
+            <a href="tag.html">Tag</a>
+            <a href="list.html">Vertical List</a>
+            <a href="gridList.html">Grid List</a>
+            <a href="table.html">Data Table</a>
+            <a href="nav.html">Navigation</a>
+            <a href="footer.html">Footer</a>
+            <a href="card.html">Cards</a>
+            <a href="formElements.html">Form Elements</a>
+            <a href="notification.html">Notification</a>
+            <a href="modal.html">Modals</a>
+            <a href="accordion.html">Accordion</a>
+            <a href="hero.html">Hero Image Section</a>
+        </div>
+         <!--Dropdown-->
+        <button class="dropdown bottom_nav_link">GitHub 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown_container">
+            <a href="https://github.com/soniatallroth/PHP-Web-Prototype" target="_blank">PHP Website</a>
+            <a href="https://github.com/soniatallroth/Design-Guidelines-PHP" target="_blank">Design Guidelines</a>
+        </div>
+    </nav>
+    <!--Hero section-->
+    <section class="hero">
+        <img src="images/heroimagesupport.png" alt="people filling containers with bread">
+        <div class="hero_text_container">
+            <h1 class="hero_title">Components</h1>
+            <p class="hero_subtitle">Individual pieces of our design</p>
+        </div>
+    </section>
+    <!--Body content-->
+    <main>
+        <!--Intro-->
+        <section class="intro">
+            <div class="title_header">
+                <h1>Cards</h1>
+                <div class="title_line"></div>
+            </div>
+            <ul>
+                <a href="#home_card"><h2># Home Cards</h2></a>
+                <a href="#post_card"><h2># Post Cards</h2></a>
+                <a href="#message_card"><h2># Message Cards</h2></a>
+            </ul>
+        </section>
+        <!--Card Module-->
+        <section id="home_card" class="module">
+            <div class="title_header">
+                <h1>Home Page Card</h1>
+                <div class="title_line"></div>
+            </div>
+            <!--Example-->
+            <div class="subtitle_header">
+                <h2>Example</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <div class="card">
+                <img class="teal_badge" alt="question mark" src="images/question badge.png">
+                <h3>Ask for help</h3>
+                <p>Having trouble around your home? Need help moving your furniture, or maybe just need someone to mow your lawn? No matter the task, here is the place to ask for help. The button below will take you to a page where you can create a post and specify what task your community can help with.</p>
+                <a href="post.html"><input class="coral_button" type="submit" value="Create Post"></a>
+            </div>
+            <!--Rationale-->
+            <div class="subtitle_header">
+                <h2>Rationale</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <p>This is the description of the module.</p>       
+            <!--HTML Code section-->
+            <div class="subtitle_header">
+                <h2>HTML</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                <div class="card">
+                    <img class="teal_badge" alt="question mark" src="images/question badge.png">
+                    <h3>Ask for help</h3>
+                    <p>Having trouble around your home? Need help moving your furniture, or maybe just need someone to mow your lawn? No matter the task, here is the place to ask for help. The button below will take you to a page where you can create a post and specify what task your community can help with.</p>
+                    <a href="post.html"><input class="coral_button" type="submit" value="Create Post"></a>
+                </div>
+            </pre>
+            <!--CSS Code section-->
+            <div class="subtitle_header">
+                <h2>CSS</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                .card_container {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .card {
+                    border: 2px solid var(--teal-main);
+                    width: 30%;
+                    text-align: center;
+                    margin-top: 20px;
+                    padding: 24px;
+                    border-radius: 12px;
+                }
+                .card h3 {
+                    font-size: 1.875em;
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 400; 
+                }
+                .card p {
+                    margin: 20px 0px;
+                }
+            </pre>
+        </section>
+        <!--End of module-->
+        <!--Posts page card Module-->
+        <section id="post_card" class="module">
+            <div class="title_header">
+                <h1>Posts Page Card</h1>
+                <div class="title_line"></div>
+            </div>
+            <!--Example-->
+            <div class="subtitle_header">
+                <h2>Example</h2>
+                <div class="subtitle_line"></div>
+            </div>
+                <div id="post">
+                    <div id="left_search">
+                        <img src="images/postPhoto.png" alt="picture of house">
+                    </div>
+                    <div id="right_search">
+                        <div class="tag_container">
+                            <p class="teal_tag">Manual labor</p>
+                            <p class="coral_tag">One-time task</p>
+                        </div>
+                        <h3>Landscaping</h3>
+                        <p>Looking for someone to help with parts of my yard that have not been worked on in a while. Tools will be provided.</p>
+                        <br><p id="gray">3 days ago</p>
+                    </div>
+                </div>
+            <!--Rationale-->
+            <div class="subtitle_header">
+                <h2>Rationale</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <p>This is the description of the module.</p>       
+            <!--HTML Code section-->
+            <div class="subtitle_header">
+                <h2>HTML</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                <div id="post">
+                    <div id="left_search">
+                        <img src="images/postPhoto.png" alt="picture of house">
+                    </div>
+                    <div id="right_search">
+                        <div class="tag_container">
+                            <p class="teal_tag">Manual labor</p>
+                            <p class="coral_tag">One-time task</p>
+                        </div>
+                        <h3>Landscaping</h3>
+                        <p>Looking for someone to help with parts of my yard that have not been worked on in a while. Tools will be provided.</p>
+                        <br><p id="gray">3 days ago</p>
+                    </div>
+                </div>
+            </pre>
+            <!--CSS Code section-->
+            <div class="subtitle_header">
+                <h2>CSS</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                #post {
+                    width: 900px;
+                    border: 1.5px solid var(--light-gray);
+                    border-radius: 12px;
+                    margin: auto;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    display: grid;
+                    grid-template-columns: 0.7fr 1.3fr;
+                    grid-template-rows: 1fr;
+                    grid-auto-columns: 1fr;
+                    grid-auto-rows: 1fr;
+                    gap: 20px 20px;
+                    grid-auto-flow: row;
+                    grid-template-areas: "search-left search-right";
+                }
+                #left_search {
+                    grid-area: search-left;
+                }
+                #left_search img {
+                    padding: 10px 10px 8px 10px;
+                    border-radius: 20px;
+                    width: 350px;
+                }
+                #right_search {
+                    grid-area: search-right;
+                    padding: 10px;
+                }
+                h3 {
+                    font-size: 1.875em;
+                    padding: 20px 0px;
+                    font-weight: 400;
+                }
+                #gray {
+                    color: var(--gray);
+                }
+            </pre>
+        </section>
+        <!--End of module-->
+        <!--Start Module-->
+        <section id="message_card" class="module">
+            <div class="title_header">
+                <h1>Message Card</h1>
+                <div class="title_line"></div>
+            </div>
+            <!--Example of module-->
+            <div class="subtitle_header">
+                <h2>Example</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <!--Single message-->
+            <div class="message message_top ">
+                <div id="avatar">
+                    <img src="images/messagePic.svg" alt="avatar"/>
+                </div>
+                <div id="name"><h4>Babysitter needed</h4></div>
+                <div id="tag">
+                    <div class="tag_container"> <p class="coral_tag">Volunteer</p> </div>
+                </div>
+                <div id="time"> 
+                    <p>6 hours ago</p> 
+                    <input type="checkbox">
+                </div>
+            </div> 
+            <!--End of single message-->
+            <!--Rationale-->
+            <div class="subtitle_header">
+                <h2>Rationale</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <p>This is the description of the module.</p>  
+            <!--HTML Code section-->
+            <div class="subtitle_header">
+                <h2>HTML</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                <!--Single message-->
+                        <div class="message message_top">
+                            <div id="avatar">
+                                <img src="images/message-pics/2.svg" alt="avatar"/>
+                            </div>
+                            <div id="name"><h4>Babysitter needed</h4></div>
+                            <div id="tag">
+                                <div class="tag_container"> <p class="coral_tag">Volunteer</p> </div>
+                            </div>
+                            <div id="time"> 
+                                <p>6 hours ago</p> 
+                                <input type="checkbox">
+                            </div>
+                        </div> 
+                    <!--End of single message-->
+            </pre>
+            <!--CSS Code section-->
+            <div class="subtitle_header">
+                <h2>CSS</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                /* individual message */
+                .message {
+                    display: grid;
+                    grid-template-columns: 0.2fr 2.3fr 0.5fr;
+                    grid-template-rows: 0.6fr 0.8fr;
+
+                    grid-template-areas:
+                        "message-avatar message-name message-time"
+                        "message-avatar message-tag message-time";
+                    height: 80px;
+                    width: 100%;
+                    border-top: 1px solid var(--light-gray);
+                    border-left: 1px solid var(--light-gray);
+                    border-right: 1px solid var(--light-gray);
+                    padding: 10px;
+                    border-radius: 0px;
+                }
+                .message_top {
+                    border-radius: 6px 6px 0px 0px;
+                }
+                .message_bottom {
+                    border-radius: 0px 0px 6px 6px;
+                    border-bottom: 1px solid var(--light-gray);
+                }
+                #avatar {
+                    grid-area: message-avatar;
+                    justify-self: center;
+                    align-self: center;
+                }
+                #avatar img {
+                    border-radius: 50%;
+                    width: 50px;
+                }
+                #name {
+                    grid-area: message-name;
+                    align-self: center;
+                    margin-left: 10px;
+                    display: flex;
+                    align-items: center;
+                }
+                #name h4 {
+                    font-family: "Lato", sans-serif;
+                    font-size: 1.25em;
+                    padding-bottom: 10px;
+                }
+                #tag {
+                    grid-area: message-tag;
+                    align-self: center;
+                    margin-left: 10px;
+                }
+                #time {
+                    grid-area: message-time;
+                    align-self: center;
+                    display: flex;
+                }
+                #time p {
+                    color: var(--gray);
+                    font-size: 0.875em;
+                }
+
+                /* Stylized checkbox */ 
+                input[type="checkbox"] {
+                    appearance: checkbox !important;
+                    margin-left: 12px;
+                }
+            </pre>
+        </section>
+        <!--End of module-->
+    </main>
+    <!--Javascript-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

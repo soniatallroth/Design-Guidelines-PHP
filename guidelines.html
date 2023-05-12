@@ -6,37 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c288a0b638.js" crossorigin="anonymous"></script>
     <title>Guidelines</title>
 </head>
 <body>
     <!--Header-->
     <nav>
-        <img src="images/phpLogo.png">
+        <a href="index.html"><img src="images/phpLogo.png"></a>
         <a href="index.html">About</a>
         <!--Dropdown-->
         <button class="dropdown">Guidelines 
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown_container">
-            <a href="#colors">Colors</a>
-            <a href="#typography">Typography</a>
-            <a href="#icons">Icon Library</a>
+            <a href="guidelines.html#colors">Colors</a>
+            <a href="guidelines.html#typography">Typography</a>
+            <a href="guidelines.html#icons">Icon Library</a>
+            <a href="guidelines.html#grid-layout">Grid-Based Layout System</a>
         </div>
          <!--Dropdown-->
         <button class="dropdown">Components 
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown_container">
-            <a href="#module">Module 1</a>
+            <a href="button.html">Button</a>
+            <a href="tag.html">Tag</a>
+            <a href="list.html">Vertical List</a>
+            <a href="gridList.html">Grid List</a>
+            <a href="table.html">Data Table</a>
+            <a href="nav.html">Navigation</a>
+            <a href="footer.html">Footer</a>
+            <a href="card.html">Cards</a>
+            <a href="formElements.html">Form Elements</a>
+            <a href="notification.html">Notification</a>
+            <a href="modal.html">Modals</a>
+            <a href="accordion.html">Accordion</a>
+            <a href="hero.html">Hero Image Section</a>
         </div>
          <!--Dropdown-->
         <button class="dropdown bottom_nav_link">GitHub 
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown_container">
-            <a href="https://github.com/soniatallroth/PHP-Web-Prototype">PHP Website</a>
-            <a href="https://github.com/soniatallroth/Design-Guidelines-PHP">Design Guidelines</a>
+            <a href="https://github.com/soniatallroth/PHP-Web-Prototype" target="_blank">PHP Website</a>
+            <a href="https://github.com/soniatallroth/Design-Guidelines-PHP" target="_blank">Design Guidelines</a>
         </div>
     </nav>
     <!--Hero section-->
@@ -67,7 +82,6 @@
                 <h1>Colors</h1>
                 <div class="title_line"></div>
             </div>
-            <p>This is the description of the module.</p>
             <div class="subtitle_header">
                 <h1>Color Info Images</h1>
                 <div class="subtitle_line"></div>
@@ -375,66 +389,102 @@
             <table>
                 <tr>
                     <th>Standard</th>
+                    <th>Example</th>
+                    <th>Tag</th>
                     <th>Font Color</th>
                     <th>Type</th>
                     <th>Size</th>
                     <th>Weight</th>
                     <th>Line Height</th>
                     <th>Horizontal Alignment</th>
-                    <th>Other Details and Notes</th>
                 </tr>
-                <tr> <!--Body text-->
-                    <td>body text or other types of text<br>p</td>
-                    <td>--black<br>--white</td>
-                    <td>Inter</td>
-                    <td>16 px</td>
-                    <td>Normal (400)</td>
-                    <td>24px</td>
-                    <td>-</td>
-                    <td>Color and alignment is based on parent components or elements; black/white, right/center aligned</td>
-                </tr>
-                <tr> <!--Headings-->
-                    <td>Headings / titles<br>h1</td>
+                <tr> <!--Page title-->
+                    <td>Page Title</td>
+                    <td><p id="example-page-title">Page Title</p></td>
+                    <td>h1</td>
                     <td>--black<br>--white</td>
                     <td>Lato</td>
-                    <td>36 px</td>
+                    <td>3em</td>
                     <td>Bold (700)</td>
                     <td>normal</td>
                     <td>center</td>
-                    <td>-</td>
                 </tr>
-                <tr> <!--Subheadings-->
-                    <td>Subheadings<br>h2</td>
-                    <td>--black<br>--white</td>
-                    <td>Inter</td>
-                    <td>16 px</td>
-                    <td>Normal (400)</td>
-                    <td>normal</td>
-                    <td>Start</td>
-                    <td>Color and alignment is based on child components or elements; black/white, right/center aligned</td>
-                </tr>
-                <tr> <!--Sub sub headings-->
-                    <td>Sub-subheadings<br>h3</td>
+                <tr> <!--Heading-->
+                    <td>Heading</td>
+                    <td><p id="example-heading">Heading</p></td>
+                    <td>h2</td>
                     <td>--black<br>--white</td>
                     <td>Lato</td>
-                    <td>16 px</td>
-                    <td>Normal (400)</td>
-                    <td>24px</td>
-                    <td>-</td>
-                    <td>Color and alignment is based on parent components or elements; black/white, right/center aligned</td>
+                    <td>2.25em</td>
+                    <td>Bold (700)</td>
+                    <td>normal</td>
+                    <td>dependent (default: right)</td>
                 </tr>
-                <tr> <!--Links-->
-                    <td>Links<br>a</td>
+                <tr> <!--Section title-->
+                    <td>Section Title</td>
+                    <td><p id="example-section-title">Section Title</p></td>
+                    <td>h3</td>
+                    <td>--black<br>--white</td>
+                    <td>Lato</td>
+                    <td>1.875em</td>
+                    <td>Normal (400)</td>
+                    <td>normal</td>
+                    <td>dependent (default: right)</td>
+                </tr>
+                <tr> <!--Subheading-->
+                    <td>Subheading</td>
+                    <td><p id="example-subheading">Subheading</p></td>
+                    <td>h4</td>
+                    <td>--black<br>--white</td>
+                    <td>Lato</td>
+                    <td>1.25em</td>
+                    <td>Normal (400)</td>
+                    <td>normal</td>
+                    <td>dependent (default: right)</td>
+                </tr>
+                <tr> <!--Body text-->
+                    <td>Body text</td>
+                    <td><p>Body text</p></td>
+                    <td>p</td>
                     <td>--black<br>--white</td>
                     <td>Inter</td>
-                    <td>16 px</td>
+                    <td>1em</td>
                     <td>Normal (400)</td>
                     <td>24px</td>
-                    <td>-</td>
-                    <td>Color and alignment is based on parent components or elements; black/white, right/center aligned</td>
+                    <td>dependent (default: right)</td>
+                </tr>
+                <tr> <!--Links-->
+                    <td>Links</td>
+                    <td><p id="example-links">Link</p></td>
+                    <td>a</td>
+                    <td>--black<br>--white</td>
+                    <td>Inter</td>
+                    <td>1em</td>
+                    <td>Normal (400)</td>
+                    <td>24px</td>
+                    <td>dependent (default: center)</td>
+                </tr>
+                <tr> <!--Tags-->
+                    <td>Tags</td>
+                    <td><p id="example-tags">Tags</p></td>
+                    <td>p</td>
+                    <td>--black<br>--white</td>
+                    <td>Inter</td>
+                    <td>0.875em</td>
+                    <td>Normal (400)</td>
+                    <td>normal</td>
+                    <td>center</td>
                 </tr>
             </table><br>
+            <p>1em = 16px</p>
             <p>(n/a = not specified, can't find, or doesn't exist in files) ( - = dependent on something else, see notes)</p>
+            <div class="subtitle_header">
+                <h1>Rationale</h1>
+                <div class="subtitle_line"></div>
+            </div>
+            <p>Inter and Lato are popular fonts among web designers due to the readability and versatility of both the fonts. 
+            Both fonts are designed with readability in mind, making them easy to read on various digital device screens. </p><br>
+            <p>Inter and Lato can be used for a wide range of applications and contexts. We use Lato as a heading font, because its wide letter form and thick bold letters draws users’ attention. Inter is utilized as a body text font because of its contrasting thin lettering to Lato and frequent application within the web design community.</p>
         </section>
         <!--End of module-->
         <!--Module-->
@@ -449,12 +499,16 @@
             </div>
             <h3 class="section_header">Font Awesome</h3>
             <ul>
-                <li><a href="https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid">Search icon</a></li>
-                <li><a href="https://fontawesome.com/icons/magnifying-glass?f=classic&s=thin">Search icon thin</a></li>
-                <li><a href="https://fontawesome.com/icons/question?f=classic&s=solid">Question mark</a></li>
-                <li><a href="https://fontawesome.com/icons/dollar-sign?f=classic&s=solid">Dollar sign</a></li>
-                <li><a href="https://fontawesome.com/icons/chevron-right?f=classic&s=solid">Chevron right</a></li>
-                <li><a href="https://fontawesome.com/icons/chevron-left?f=classic&s=solid">Chevron left</a></li>
+                <li><a href="https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid">Search icon <i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="https://fontawesome.com/icons/question?f=classic&s=solid">Question mark <i class="fa-solid fa-question"></i></a></li>
+                <li><a href="https://fontawesome.com/icons/dollar-sign?f=classic&s=solid">Dollar sign <i class="fa-solid fa-dollar-sign"></i></a></li>
+                <li><a href="https://fontawesome.com/icons/chevron-right?f=classic&s=solid">Chevron right <i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="https://fontawesome.com/icons/chevron-left?f=classic&s=solid">Chevron left <i class="fa-solid fa-chevron-left"></i></a></li>
+                <li><a href="https://fontawesome.com/icons/xmark?f=classic&s=solid">X mark <i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="https://fontawesome.com/icons/twitter?f=brands&s=solid">Twitter <i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://fontawesome.com/icons/instagram?f=brands&s=solid">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://fontawesome.com/icons/facebook-f?f=brands&s=solid">Facebook <i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://fontawesome.com/icons/circle-user?f=classic&s=solid">Circle user <i class="fa-solid fa-circle-user"></i></a></li>
             </ul>
             <div class="subtitle_header">
                 <h1>Rationale</h1>
@@ -466,6 +520,21 @@
                 <div class="subtitle_line"></div>
             </div>
             <p>Use an i tag to place Font Awesome icons in your project.</p>
+        </section>
+        <!--End of module-->
+        <!--Module-->
+        <section id="grid-layout" class="module">
+            <div class="title_header">
+                <h1>Grid-Based Layout System</h1>
+                <div class="title_line"></div>
+            </div>
+            <div class="subtitle_header">
+                <h1>Responsive Web Design</h1>
+                <div class="subtitle_line"></div>
+            </div>
+            <img id="responsive" src="images/responsive-web.png" alt="grid-based layout design">
+            <p>This layout system is designed based on a 12 column grid layout. Grid content scales to fit the area on the page, depending on what the component is. Some components scale to fit the page, and all components will fit on any given page, no matter how small it is. However, some components have max widths of how wide a given component can be, so ultra-wide screen viewers don’t have a completely different view of what the site should look like, and don’t have to read large blocks of text that span a larger computer screen. </p>
+            <br><p>For desktop viewers, there is a margin of 100px around the body pages of the design. Elements that are right next to eachother in the grid layout have a gutter of 10px. Not everything in the current prototype is responsive, but components should be able to scale. With the help of flexbox, all components that are viewed in rows on the desktop should be able to be viewed in a column on smaller screens. </p>
         </section>
         <!--End of module-->
     </main>

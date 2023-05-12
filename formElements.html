@@ -1,0 +1,416 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Components</title>
+</head>
+<body>
+    <!--Header-->
+    <nav>
+        <a href="index.html"><img src="images/phpLogo.png"></a>
+        <a href="index.html">About</a>
+        <!--Dropdown-->
+        <button class="dropdown">Guidelines 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown_container">
+            <a href="guidelines.html#colors">Colors</a>
+            <a href="guidelines.html#typography">Typography</a>
+            <a href="guidelines.html#icons">Icon Library</a>
+            <a href="guidelines.html#grid-layout">Grid-Based Layout System</a>
+        </div>
+         <!--Dropdown-->
+        <button class="dropdown">Components 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown_container">
+            <a href="button.html">Button</a>
+            <a href="tag.html">Tag</a>
+            <a href="list.html">Vertical List</a>
+            <a href="gridList.html">Grid List</a>
+            <a href="table.html">Data Table</a>
+            <a href="nav.html">Navigation</a>
+            <a href="footer.html">Footer</a>
+            <a href="card.html">Cards</a>
+            <a href="formElements.html">Form Elements</a>
+            <a href="notification.html">Notification</a>
+            <a href="modal.html">Modals</a>
+            <a href="accordion.html">Accordion</a>
+            <a href="hero.html">Hero Image Section</a>
+        </div>
+         <!--Dropdown-->
+        <button class="dropdown bottom_nav_link">GitHub 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown_container">
+            <a href="https://github.com/soniatallroth/PHP-Web-Prototype" target="_blank">PHP Website</a>
+            <a href="https://github.com/soniatallroth/Design-Guidelines-PHP" target="_blank">Design Guidelines</a>
+        </div>
+    </nav>
+    <!--Hero section-->
+    <section class="hero">
+        <img src="images/heroimagesupport.png" alt="people filling containers with bread">
+        <div class="hero_text_container">
+            <h1 class="hero_title">Components</h1>
+            <p class="hero_subtitle">Individual pieces of our design</p>
+        </div>
+    </section>
+
+    <!--Body content-->
+    <main>
+        <!--Intro-->
+        <section class="intro">
+            <div class="title_header">
+                <h1>Form Elements</h1>
+                <div class="title_line"></div>
+            </div>
+            <ul>
+                <a href="#text"><h2># Text</h2></a>
+                <a href="#radio"><h2># Radio Button</h2></a>
+                <a href="#dropdown"><h2># Dropdown</h2></a>
+                <a href="#checkbox"><h2># Checkbox</h2></a>
+            </ul>
+        </section>
+    <!--Start Module-->
+        <section id="text" class="module">
+            <div class="title_header">
+                <h1>Text Input</h1>
+                <div class="title_line"></div>
+            </div>
+            <!--Example of module-->
+            <div class="subtitle_header">
+                <h2>Example</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <label class="text-label" for="username">Your username <span id="red">*</span></label><br>
+            <input class="text-input" id="username" name="username" type="text" placeholder="eg. johnsmith">            
+            <!--Rationale-->
+            <div class="subtitle_header">
+                <h2>Rationale</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <p>This is the description of the module.</p>  
+            <!--HTML Code section-->
+            <div class="subtitle_header">
+                <h2>HTML</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                <label class="text-label" for="username">Your username <span id="red">*</span></label><br>
+                <input class="text-input" id="username" name="username" type="text" placeholder="eg. johnsmith">
+            </pre>
+            <!--CSS Code section-->
+            <div class="subtitle_header">
+                <h2>CSS</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                input[type="text"],
+                input[type="password"],
+                textarea {
+                    width: 100%;
+                    font-size: 1em;
+                    padding: 8px;
+                    margin: 10px 0px 10px 0px;
+                    border-radius: 4px;
+                    border: 1px solid var(--black);
+                    color: var(--black);
+                    background-color: var(--white);
+                }
+                input[type="text"]::placeholder,
+                input[type="password"]::placeholder,
+                textarea::placeholder {
+                    color: var(--gray);
+                }
+                #red {
+                    color: var(--red);
+                }
+            </pre>
+        </section>
+        <!--End of module-->
+        <!--Start Module-->
+        <section id="radio" class="module">
+            <div class="title_header">
+                <h1>Radio Input</h1>
+                <div class="title_line"></div>
+            </div>
+            <!--Example of module-->
+            <div class="subtitle_header">
+                <h2>Example</h2>
+                <div class="subtitle_line"></div>
+            </div>
+                <input type="radio" id="onetime" name="radio" value="One-time">
+                    <label for="recurring">One-time</label>
+                    <input type="radio" id="recurring" name="radio" value="Recurring">
+                    <label for="Recurring">Recurring</label>
+                    <input type="radio" id="both" name="radio" value="Both">
+                    <label for="Both">Both</label>
+            <!--Rationale-->
+            <div class="subtitle_header">
+                <h2>Rationale</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <p>This is the description of the module.</p>  
+            <!--HTML Code section-->
+            <div class="subtitle_header">
+                <h2>HTML</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                <label class="text-label" for="username">Your username <span id="red">*</span></label><br>
+                <input class="text-input" id="username" name="username" type="text" placeholder="eg. johnsmith">
+            </pre>
+            <!--CSS Code section-->
+            <div class="subtitle_header">
+                <h2>CSS</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                input[type="radio"] {
+                    all: revert;
+                }
+            </pre>
+        </section>
+        <!--End of module-->
+        <!--Start Module-->
+        <section id="dropdown" class="module">
+            <div class="title_header">
+                <h1>Dropdown</h1>
+                <div class="title_line"></div>
+            </div>
+            <!--Example of module-->
+            <div class="subtitle_header">
+                <h2>Example</h2>
+                <div class="subtitle_line"></div>
+            </div>
+                    <div id="filter_container">
+                        <label>Type of work</label>
+                        <div class="custom-select" style="width:150px;">
+                            <select>
+                                <option>Select</option>
+                                <option>Nannying</option>
+                                <option>Manual labor</option>
+                            </select>
+                        </div>
+                    </div>
+            <!--Rationale-->
+            <div class="subtitle_header">
+                <h2>Rationale</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <p>This is the description of the module.</p>  
+            <!--HTML Code section-->
+            <div class="subtitle_header">
+                <h2>HTML</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                    <div id="filter_container">
+                        <label>Type of work</label>
+                        <div class="custom-select" style="width:150px;">
+                            <select>
+                                <option>Select</option>
+                                <option>Nannying</option>
+                                <option>Manual labor</option>
+                            </select>
+                        </div>
+                    </div>
+            </pre>
+            <!--CSS Code section-->
+            <div class="subtitle_header">
+                <h2>CSS</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                /* custom select container */
+                .custom-select {
+                position: relative;
+                font-family: Arial;
+                }
+                .custom-select select {
+                display: none; /*hide original SELECT element:*/
+                }
+                .select-selected {
+                background-color: var(--gray);
+                border-radius: 4px 4px 4px 4px;
+                }
+                .select-selected:after {
+                position: absolute;
+                content: "";
+                top: 14px;
+                right: 10px;
+                width: 0;
+                height: 0;
+                border: 6px solid transparent;
+                border-color: var(--white) transparent transparent transparent;
+                }
+                .select-selected.select-arrow-active:after {
+                border-color: transparent transparent var(--white) transparent;
+                top: 7px;
+                }
+                .select-items div,.select-selected {
+                color: var(--white);
+                padding: 8px 16px;
+                border: 1px solid transparent;
+                border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+                cursor: pointer;
+                user-select: none;
+
+                }
+                .select-items {
+                position: absolute;
+                background-color: var(--gray);
+                top: 100%;
+                left: 0;
+                right: 0;
+                z-index: 99;
+                    border-radius: 0px 0px 4px 4px;
+                }
+                .select-hide {
+                display: none;
+                }
+                .select-items div:hover, .same-as-selected {
+                background-color: rgba(0, 0, 0, 0.1);
+                }
+            </pre>
+            <!--JS Code section-->
+            <div class="subtitle_header">
+                <h2>JS</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                var x, i, j, l, ll, selElmnt, a, b, c;
+                /*look for any elements with the class "custom-select":*/
+                x = document.getElementsByClassName("custom-select");
+                l = x.length;
+                for (i = 0; i < l; i++) {
+                selElmnt = x[i].getElementsByTagName("select")[0];
+                ll = selElmnt.length;
+                /*for each element, create a new DIV that will act as the selected item:*/
+                a = document.createElement("DIV");
+                a.setAttribute("class", "select-selected");
+                a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                x[i].appendChild(a);
+                /*for each element, create a new DIV that will contain the option list:*/
+                b = document.createElement("DIV");
+                b.setAttribute("class", "select-items select-hide");
+                for (j = 1; j < ll; j++) {
+                    /*for each option in the original select element,
+                    create a new DIV that will act as an option item:*/
+                    c = document.createElement("DIV");
+                    c.innerHTML = selElmnt.options[j].innerHTML;
+                    c.addEventListener("click", function(e) {
+                        /*when an item is clicked, update the original select box,
+                        and the selected item:*/
+                        var y, i, k, s, h, sl, yl;
+                        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                        sl = s.length;
+                        h = this.parentNode.previousSibling;
+                        for (i = 0; i < sl; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            yl = y.length;
+                            for (k = 0; k < yl; k++) {
+                            y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                        }
+                        h.click();
+                    });
+                    b.appendChild(c);
+                }
+                x[i].appendChild(b);
+                a.addEventListener("click", function(e) {
+                    /*when the select box is clicked, close any other select boxes,
+                    and open/close the current select box:*/
+                    e.stopPropagation();
+                    closeAllSelect(this);
+                    this.nextSibling.classList.toggle("select-hide");
+                    this.classList.toggle("select-arrow-active");
+                    });
+                }
+                function closeAllSelect(elmnt) {
+                /*a function that will close all select boxes in the document,
+                except the current select box:*/
+                var x, y, i, xl, yl, arrNo = [];
+                x = document.getElementsByClassName("select-items");
+                y = document.getElementsByClassName("select-selected");
+                xl = x.length;
+                yl = y.length;
+                for (i = 0; i < yl; i++) {
+                    if (elmnt == y[i]) {
+                    arrNo.push(i)
+                    } else {
+                    y[i].classList.remove("select-arrow-active");
+                    }
+                }
+                for (i = 0; i < xl; i++) {
+                    if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                    }
+                }
+                }
+                /*if the user clicks anywhere outside the select box,
+                then close all select boxes:*/
+                document.addEventListener("click", closeAllSelect);
+            </pre>
+        </section>
+        <!--End of module-->
+        <!--Start Module-->
+        <section id="checkbox" class="module">
+            <div class="title_header">
+                <h1>Checkbox</h1>
+                <div class="title_line"></div>
+            </div>
+            <!--Example of module-->
+            <div class="subtitle_header">
+                <h2>Example</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <div id="time"> 
+                <p>6 hours ago</p> 
+                <input type="checkbox">
+            </div>
+            <!--Rationale-->
+            <div class="subtitle_header">
+                <h2>Rationale</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <p>This is the description of the module.</p>  
+            <!--HTML Code section-->
+            <div class="subtitle_header">
+                <h2>HTML</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                <input type="checkbox">
+            </pre>
+            <!--CSS Code section-->
+            <div class="subtitle_header">
+                <h2>CSS</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                input[type="checkbox"] {
+                    appearance: checkbox !important;
+                    margin-left: 12px;
+                }
+            </pre>
+        </section>
+        <!--End of module-->
+    </main>
+    <!--Javascript-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/customSelect.js"></script>
+</body>
+</html>

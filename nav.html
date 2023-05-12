@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Components</title>
+</head>
+<body>
+    <!--Header-->
+    <nav>
+        <a href="index.html"><img src="images/phpLogo.png"></a>
+        <a href="index.html">About</a>
+        <!--Dropdown-->
+        <button class="dropdown">Guidelines 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown_container">
+            <a href="guidelines.html#colors">Colors</a>
+            <a href="guidelines.html#typography">Typography</a>
+            <a href="guidelines.html#icons">Icon Library</a>
+            <a href="guidelines.html#grid-layout">Grid-Based Layout System</a>
+        </div>
+         <!--Dropdown-->
+        <button class="dropdown">Components 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown_container">
+            <a href="button.html">Button</a>
+            <a href="tag.html">Tag</a>
+            <a href="list.html">Vertical List</a>
+            <a href="gridList.html">Grid List</a>
+            <a href="table.html">Data Table</a>
+            <a href="nav.html">Navigation</a>
+            <a href="footer.html">Footer</a>
+            <a href="card.html">Cards</a>
+            <a href="formElements.html">Form Elements</a>
+            <a href="notification.html">Notification</a>
+            <a href="modal.html">Modals</a>
+            <a href="accordion.html">Accordion</a>
+            <a href="hero.html">Hero Image Section</a>
+        </div>
+         <!--Dropdown-->
+        <button class="dropdown bottom_nav_link">GitHub 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown_container">
+            <a href="https://github.com/soniatallroth/PHP-Web-Prototype" target="_blank">PHP Website</a>
+            <a href="https://github.com/soniatallroth/Design-Guidelines-PHP" target="_blank">Design Guidelines</a>
+        </div>
+    </nav>
+    <!--Hero section-->
+    <section class="hero">
+        <img src="images/heroimagesupport.png" alt="people filling containers with bread">
+        <div class="hero_text_container">
+            <h1 class="hero_title">Components</h1>
+            <p class="hero_subtitle">Individual pieces of our design</p>
+        </div>
+    </section>
+    <!--Body content-->
+    <main>
+    <!--nav Module-->
+        <section id="example" class="module">
+            <div class="title_header">
+                <h1>Navigation</h1>
+                <div class="title_line"></div>
+            </div>
+            <!--Example of module-->
+            <div class="subtitle_header">
+                <h2>Example</h2>
+                <div class="subtitle_line"></div>
+            </div>
+                <div class="header_example">
+                    <div class="left_header">
+                        <a href="index.html"><img class="logo_header" src="images/phpLogo.png" alt="PHP Logo"></a>
+                        <div class="example_nav">
+                            <a href="#">Posts</a>
+                            <a href="#">Messages</a>
+                            <a href="#">Support & FAQ</a>
+                        </div>
+                    </div>
+                    <div class="right_header">
+                        <input id="myBtn" class="coral_button" type="submit" value="Create Post"></a>
+                        <img class="black_bell" src="images/bell-fill.png" alt="Bell icon">
+                        <img id="myBtnLogin" class="avatar" src="images/messagePic.svg" alt="avatar image"></a>
+                    </div>
+                </div>
+            <!--Rationale-->
+            <div class="subtitle_header">
+                <h2>Rationale</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <p>This is the description of the module.</p>  
+            <!--HTML Code section-->
+            <div class="subtitle_header">
+                <h2>HTML</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                <div class="header_example">
+                    <div class="left_header">
+                        <a href="index.html"><img class="logo_header" src="images/phpLogo.png" alt="PHP Logo"></a>
+                        <div class="example_nav">
+                            <a href="#">Posts</a>
+                            <a href="#">Messages</a>
+                            <a href="#">Support & FAQ</a>
+                        </div>
+                    </div>
+                    <div class="right_header">
+                        <input id="myBtn" class="coral_button" type="submit" value="Create Post"></a>
+                        <img class="black_bell" src="images/bell-fill.png" alt="Bell icon">
+                        <img id="myBtnLogin" class="avatar" src="images/messagePic.svg" alt="avatar image"></a>
+                    </div>
+                </div>
+            </pre>
+            <!--CSS Code section-->
+            <div class="subtitle_header">
+                <h2>CSS</h2>
+                <div class="subtitle_line"></div>
+            </div>
+            <pre class="syntax-html">
+                .header_example {
+                    height: 75px;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    padding: 20px;
+                    justify-content: space-between;
+                    border-bottom: 1.5px solid var(--black);
+                }
+                .left_header {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                }
+                .right_header {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                }
+                .logo_header {
+                    height: 40px;
+                }
+                .example_nav {
+                    margin: 0px 40px;
+                }
+                .example_nav a {
+                    padding: 0px 10px;
+                    color: var(--gray);
+                }
+                .example_nav a:hover {
+                    text-decoration: underline;
+                    color: var(--black);
+                }
+                .black_bell {
+                    height: 24px;
+                    padding: 0px 20px;
+                }
+                .avatar {
+                    height: 40px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            </pre>
+        </section>
+        <!--End of module-->
+    </main>
+    <!--Javascript-->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
